@@ -6,8 +6,10 @@ package com.example.user.hangman;
 
 public class UserInterface {
 
-    public UserInterface() {
+    Word word;
 
+    public UserInterface(String setter) {
+        word = new Word(setter);
     }
 
     public void welcome() {
@@ -23,6 +25,8 @@ public class UserInterface {
     }
 
     public void displayForViewer(){
-        System.out.println("Here is the number of letters in the word for your to guess: " );
+        word.display();
+        System.out.println("Here is the number of letters in the word for your to guess: ");
+        System.out.println(word.displayToViewer());
     }
 }

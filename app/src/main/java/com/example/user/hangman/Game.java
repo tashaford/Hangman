@@ -11,11 +11,11 @@ public class Game {
 
     public Game(String setter){
         word = new Word(setter);
-        ui = new UserInterface();
+        ui = new UserInterface(setter);
     }
 
     public void playGame(){
         ui.welcome();
-        word.displayToViewer();
+        ui.displayForViewer();
     }
 }

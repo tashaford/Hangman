@@ -12,12 +12,10 @@ import java.util.Scanner;
 public class Word {
 
     String word;
-    StringBuilder sb;
     ArrayList<String> displayList;
 
     public Word(String word) {
         this.word = word;
-        sb = new StringBuilder(word);
         displayList = new ArrayList<>();
 
     }
@@ -39,27 +37,28 @@ public class Word {
         ArrayList<Integer> positions = new ArrayList<>();
         int index = word.indexOf(guess);
         while (index >= 0) {
-            positions.add(index +1);
+            positions.add(index + 1);
             index = word.indexOf(guess, index + 1);
-        } return positions;
+        }
+        return positions;
     }
 
-    public ArrayList<String> display(){
+    public ArrayList<String> display() {
         for (char letter : word.toCharArray()) {
             displayList.add("*");
-        } return displayList;
+        }
+        return displayList;
     }
 
-    public String displayToViewer(){
-        return String.valueOf(displayList);
+    public String displayToViewer() {
+        StringBuilder formattedWord = new StringBuilder();
+        for (String s : displayList) {
+            formattedWord.append(s);
         }
+        return formattedWord.toString();
+    }
 
-//
-//        for (String letter : display()) {
-//            int count = 0;
-//            letter.get(count);
-//            count++;
-//        }
 
 }
+
 
