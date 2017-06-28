@@ -5,4 +5,15 @@ package com.example.user.hangman;
  */
 
 public class Game {
+
+    private UserInterface ui;
+
+    public Game(){
+        ui = new UserInterface();
+    }
+
+    public void playGame(){
+        ui.welcome();
+
+    }
 }

@@ -9,17 +9,17 @@ import static org.junit.Assert.assertEquals;
  * Created by user on 28/06/2017.
  */
 
-public class TestUser {
+public class TestUserInterface {
 
-    User user;
+    UserInterface ui;
 
     @Before
     public void before() {
-        user = new User("Eddie");
+     ui = new UserInterface();
     }
 
-    @Test
-    public void checkGetName() {
-        assertEquals("Eddie", user.getName());
-    }
+//    @Test
+//    public void checkWelcome() {
+//        assertEquals("Please enter your word to be guessed", ui.welcome());
+//    }
 }
