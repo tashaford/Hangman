@@ -2,6 +2,7 @@ package com.example.user.hangman;
 
 import java.lang.StringBuilder;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -12,10 +13,13 @@ public class Word {
 
     String word;
     StringBuilder sb;
+    ArrayList<String> displayList;
 
     public Word(String word) {
         this.word = word;
         sb = new StringBuilder(word);
+        displayList = new ArrayList<>();
+
     }
 
     public void setWord() {
@@ -39,5 +43,23 @@ public class Word {
             index = word.indexOf(guess, index + 1);
         } return positions;
     }
+
+    public ArrayList<String> display(){
+        for (char letter : word.toCharArray()) {
+            displayList.add("*");
+        } return displayList;
+    }
+
+    public String displayToViewer(){
+        return String.valueOf(displayList);
+        }
+
+//
+//        for (String letter : display()) {
+//            int count = 0;
+//            letter.get(count);
+//            count++;
+//        }
+
 }
 

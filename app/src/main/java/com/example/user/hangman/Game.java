@@ -7,13 +7,15 @@ package com.example.user.hangman;
 public class Game {
 
     private UserInterface ui;
+    private Word word;
 
-    public Game(){
+    public Game(String setter){
+        word = new Word(setter);
         ui = new UserInterface();
     }
 
     public void playGame(){
         ui.welcome();
-
+        word.displayToViewer();
     }
 }

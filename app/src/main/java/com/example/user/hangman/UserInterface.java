@@ -11,7 +11,7 @@ public class UserInterface {
     }
 
     public void welcome() {
-        System.out.println("Please enter your word to be guessed");
+        System.out.println("Let's play hangman.");
     }
 
     public void position(char letter) {
@@ -20,5 +20,9 @@ public class UserInterface {
 
     public void askForGuess(){
         System.out.println("Which letter do you guess?");
+    }
+
+    public void displayForViewer(){
+        System.out.println("Here is the number of letters in the word for your to guess: " );
     }
 }
