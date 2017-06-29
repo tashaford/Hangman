@@ -9,15 +9,5 @@ import java.util.Scanner;
  */
 
 public interface Guessable {
-//
-//    ArrayList<String> guessed;
-//
-//    public Guessable(){
-//        this.guessed = new ArrayList<String>();
-//    }
-//
-//    public String getGuess(){
-//        Scanner sc = new Scanner(System.in);
-//        return sc.nextInt();
-//    }
+
 }

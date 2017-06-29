@@ -12,10 +12,11 @@ import static org.junit.Assert.assertEquals;
 public class TestUserInterface {
 
     UserInterface ui;
+    String setter;
 
     @Before
     public void before() {
-     ui = new UserInterface();
+     ui = new UserInterface(setter);
     }
 
 //    @Test

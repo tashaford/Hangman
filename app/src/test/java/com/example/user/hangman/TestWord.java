@@ -73,4 +73,8 @@ public class TestWord {
         assertEquals("*****", word.displayToViewer());
     }
 
+//    @Test
+//    public void checkGetGuess(){
+//        assertEquals("e", word.getGuess());
+//    }
 }
